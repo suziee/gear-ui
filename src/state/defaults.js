@@ -22,11 +22,6 @@ export default function getDefaults(args) {
         [NAME.useCamState]: useCamState({
             camData: camData
         }),
-        // not used anymore b/c broadcasts from useHeaderMenu do not work
-        // react component uses state directly from menu array
-        // [NAME.useComparePage]: useComparePage({
-        //     messenger: messenger,
-        // }),
         [NAME.useCalibrateForm]: useCalibrateForm({
             messenger: messenger, // unnecessary for this hook for now
         }),

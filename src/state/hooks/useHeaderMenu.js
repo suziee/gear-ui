@@ -21,20 +21,13 @@ export default function useHeaderMenu(args) {
 
     messenger.subscribe(id, {
         [SUB.STARTUP]: gotoComparePage,
-        [SUB.TEST]: test,
     });
 
-    function test() {
-        console.log("test in header hook")
-    }
-
     function gotoComparePage () {
-        console.log("compare page")
         updateMenu(PAGE.COMPARE);
     }
 
     function gotoChartPage() {
-        console.log("chart page")
         updateMenu(PAGE.CHART);
     }
 

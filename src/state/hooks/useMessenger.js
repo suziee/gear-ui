@@ -22,7 +22,6 @@ export default function useMessenger(args) {
     }
 
     function subscribe(id, subscriptions) {
-        // console.log(id, subscriptions);
         /**
         * WARNING: this is not bulletproof
         * 
@@ -47,14 +46,8 @@ export default function useMessenger(args) {
 
         setSubscribers(x => [...x, subscriber]);
 
-        // console.log(subscriber, subscribers);
-
         return subscriber;
     }
-
-    // React.useEffect(() => {
-    //     console.log(subscribers);
-    // }, [subscribers]);
 
     return {
         broadcast: broadcast,

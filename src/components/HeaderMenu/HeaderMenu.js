@@ -15,7 +15,7 @@ export default function HeaderMenu(props) {
         return menu.map((item, index) => {
             if (index == count-1) {
                 return <div 
-                    id={item.selected ? "menu-item-selected" : null}
+                    id={item.selected ? "menu-item-selected" : "menu-item"}
                     key={`nav_item_${index}`}
                     onClick={item.onClick}>{item.label}</div>
             }
@@ -23,7 +23,7 @@ export default function HeaderMenu(props) {
             //https://stackoverflow.com/questions/74051218/in-react-why-cant-you-add-a-key-to-an-empty-fragment-short-syntax
             return <React.Fragment key={`nav_item_${index}`}>
                 <div
-                    id={item.selected ? "menu-item-selected" : null}
+                    id={item.selected ? "menu-item-selected" : "menu-item"}
                     onClick={item.onClick}>{item.label}</div>
                 <div>|</div>
             </React.Fragment>
