@@ -1,0 +1,23 @@
+#compare-page {
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: calc(100vh - 46px);
+    grid-template-areas:
+        'camTree comparisons';
+}
+
+#compare-page-hidden {
+    display: none;
+}
+
+#compare-content {
+    grid-area: comparisons;
+    overflow-y: scroll;
+}
+
+#cam-tree {
+    grid-area: camTree;
+    width: 350px;
+    overflow-y: scroll;
+    background-color: #383838;
+}

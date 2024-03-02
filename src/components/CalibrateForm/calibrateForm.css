@@ -1,0 +1,46 @@
+#calibrate-form {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.calibrate-form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.calibrate-form-element > input {
+    width: 200px;
+}
+
+.calibrate-form-element > label {
+    /* font-family: monospace; */
+    font-size: 12px;
+    color: white;
+}
+
+#calibrate-form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.calibrate-form-button {
+    background-color: #4CAF50;
+    font-family: monospace; /*need this one; doesn't inherit from global for some reason...*/
+    font-size: 15px;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.calibrate-form-default {
+    display: flex;
+    flex-direction: row;
+    background-color: violet;
+}

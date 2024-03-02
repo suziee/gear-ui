@@ -1,0 +1,26 @@
+/*https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling
+    also wrap header in div, otherwise scrollbar cuts into header
+*/
+#header-content {
+    position: sticky;
+    width: 100%;
+    top:0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategray;
+    padding: 5px;
+    align-items: center;
+}
+
+#header-logo {
+    /* font-family: monospace; */
+    font-size: 23px;
+    color: gainsboro;
+}
+
+#main-content {
+    color: gainsboro;
+}

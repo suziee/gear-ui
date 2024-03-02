@@ -1,0 +1,16 @@
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* font-family: monospace; */
+    font-size: 23px;
+    color: gainsboro;
+}
+
+#menu-item-selected {
+    background-color: #ffffff;
+    opacity: 50%;
+    color: black;
+    padding-right: 3px;
+    padding-left: 3px;
+}

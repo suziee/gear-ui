@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  ui:
+    image: ui-camparison
+    container_name: ui-camparison
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 1251:8080
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/home/node/app
+      # https://stackoverflow.com/questions/39419295/cannot-finde-module-express-node-app-with-docker
+      # added this to resolve Error: Cannot find module 'express' on docker compose up
+      - ui-camparison_node_modules:/home/node/app/node_modules 
+volumes:
+  ui-camparison_node_modules:
+#     ui:
+#         image: cam-comparison-ui
+#         container_name: cam-comparison-ui
+#         stdin_open: true
+#         tty: true
+#         build:
+#             context: ./ui/app
+#             dockerfile: Dockerfile
+#             target: development
+#         volumes:
+#             - ./ui/app/:/home/node/app
+#             - cam-comparison_node_modules:/home/node/app/node_modules
+#         ports:
+#             - 3000:3000
+#     ui2:
+#         image: cam-comparison-ui
+#         container_name: cam-comparison-ui
+#         stdin_open: true
+#         tty: true
+#         build:
+#             context: ./ui2/app
+#             dockerfile: Dockerfile
+#             target: development
+#         volumes:
+#             - ./ui2/app/:/home/node/app
+#             - cam-comparison_node_modules:/home/node/app/node_modules
+#         ports:
+#             - 3000:3000
+# volumes:
+#     cam-comparison_node_modules:
