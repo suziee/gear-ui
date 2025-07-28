@@ -91,7 +91,6 @@ export default function useCamState(args) {
                     key: tree.brand,
                     isBrand: true,
                     checked: false,
-                    selected: false,
                 }
             };
 
@@ -105,7 +104,6 @@ export default function useCamState(args) {
                         key: branch.model,
                         isModel: true,
                         checked: false,
-                        selected: false,
                     }
                 };
 
@@ -119,7 +117,6 @@ export default function useCamState(args) {
                             key: cam.guid,
                             isCam: true,
                             checked: false,
-                            selected: false,
                         }
                     };
                 }
