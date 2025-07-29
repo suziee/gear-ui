@@ -19,3 +19,7 @@
     padding-right: 3px;
     padding-left: 3px;
 }
+
+#menu-item-selected:hover, #menu-item:hover {
+    cursor: pointer;
+}
